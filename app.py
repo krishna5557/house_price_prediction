@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/' , methods=['POST' , 'GET'])
 def index():
-    logging.info('we are building logging file')
+    logging.INFO('we are building logging file')
     return 'hello world'
 
 if __name__=='__main__':

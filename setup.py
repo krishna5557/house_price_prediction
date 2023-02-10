@@ -12,12 +12,12 @@ def get_requirements_list()->List[str]:
     
     """
     with open("requirements.txt") as re:
-        return re.readlines().pop("-e .")
+        return re.readlines()
     
 
 setup(
         name="Housing-Predictor",
-        version="0.0.2",
+        version="0.0.1",
         author="Krishnakanth",
         description="this is the 1st machine learning project",
         packages=find_packages(),
