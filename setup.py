@@ -1,10 +1,9 @@
 from setuptools import setup,find_packages
-from typing import list
+from typing import List
 
 
 
-
-def get_requirements_list()->list[str]:
+def get_requirements_list()->List[str]:
     """
     description:  This function is going to return requirements from 
     requirements.txt file
@@ -12,8 +11,8 @@ def get_requirements_list()->list[str]:
     return: This function returns list in string format
     
     """
-    with open("requirements.txt") as requirements_file:
-        return requirements_file.readlines().pop("-e .")
+    with open("requirements.txt") as re:
+        return re.readlines().pop("-e .")
     
 
 setup(
